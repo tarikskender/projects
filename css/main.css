@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background-color: #000000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-buttons li {
+  width: 150px;
+  list-style: none;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.colored-block {
+  height: 100vh;
+  background-color: #090909;
+  width: 30%;
+  position: absolute;
+  top: 0;
+  z-index: -40;
+}
+
+.colored-block__image {
+  background-image: url(/materials/pfp.png);
+  position: absolute;
+  height: 70vh;
+  width: 70vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 30vh;
+}
+
+.big-title {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 4rem;
+}
