@@ -24,8 +24,8 @@ body {
 
 .colored-block {
   height: 100vh;
-  background-color: #090909;
-  width: 30%;
+  background-color: #181818;
+  width: 40%;
   position: absolute;
   top: 0;
   z-index: -40;
@@ -42,9 +42,25 @@ body {
 }
 
 .big-title {
-  color: white;
+  color: black;
   position: absolute;
   top: 50%;
   left: 50%;
   font-size: 4rem;
+}
+
+#projects div{
+  margin: 20px;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(233, 233, 233);
+
+}
+
+#projects{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: -400px;
 }
