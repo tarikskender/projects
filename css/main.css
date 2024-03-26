@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  background-color: #000000;
 }
 
 .nav {
@@ -22,23 +21,20 @@ body {
   font-size: 1.2rem;
 }
 
-.colored-block {
-  height: 100vh;
-  background-color: #181818;
-  width: 40%;
-  position: absolute;
-  top: 0;
-  z-index: -40;
+#main-section {
+  height: 60vh;
+  background-color: #101019;
+  color: white;
+  display: flex;
 }
 
-.colored-block__image {
-  background-image: url(/materials/pfp.png);
-  position: absolute;
-  height: 70vh;
-  width: 70vw;
-  background-size: contain;
-  background-repeat: no-repeat;
-  top: 30vh;
+#main-section div h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+.logo {
+  display: flex;
+  width: 10%;
 }
 
 .big-title {
@@ -49,18 +45,34 @@ body {
   font-size: 4rem;
 }
 
-#projects div{
-  margin: 20px;
-  height: 300px;
-  width: 300px;
-  background-color: rgb(233, 233, 233);
-
+#projects div {
+  display: flex;
+  justify-content: space-around;
 }
 
-#projects{
+#projects {
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
   position: absolute;
-  bottom: -400px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.card {
+  margin: 20px;
+  background-size: cover;
+}
+
+#info-block {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  padding: 4rem;
+}
+
+#info-block h1 {
+  width: 30%;
+  color: white;
+  text-align: center;
 }
