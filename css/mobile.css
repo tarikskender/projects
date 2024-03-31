@@ -1,0 +1,19 @@
+@media (max-width: 500px) {
+  .card img {
+    height: 400px;
+    width: 250px;
+  }
+  #projects div {
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+  }
+
+  #info-block {
+    padding: 1rem;
+  }
+  .projects-paragraph {
+    margin: 1.5rem;
+    width: 90%;
+    text-align: left;
+  }
+}

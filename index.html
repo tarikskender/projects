@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/sass.scss" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -55,28 +57,99 @@
     </section>
 
     <section id="info-block">
-      <h1>Idk</h1>
-      <h1>Idk</h1>
-      <h1>Idk</h1>
+      <h1 style="font-size: 1rem; width: 50vh">Welcome To My Website</h1>
+    </section>
+
+    <section class="about-me">
+      <img src="materials/mephoto.JPG" alt="Your Name" />
+      <div class="bio">
+        <h2>About Me</h2>
+        <p>
+          I'm a passionate web developer with 2 years of experience in HTML,
+          CSS, and JavaScript. Currently, I'm expanding my skills in C++ to
+          deepen my understanding of programming fundamentals, with plans to
+          learn React, TypeScript, and Next.js.
+        </p>
+      </div>
     </section>
 
     <section id="projects">
-      <h1>My Projects:</h1>
+      <h1 style="margin: 50px">My Projects:</h1>
+      <p class="projects-paragraph">
+        I'm a web developer with 2 years of experience in crafting interactive
+        and user-friendly websites. My journey in the tech world began with
+        projects that utilized HTML, CSS, and JavaScript—three pillars that have
+        since formed the foundation of my skill set.<br />
+        Currently, I'm expanding my technical horizons by studying C++. This
+        step back to the basics is crucial for me as it's helping me understand
+        the underlying principles and techniques of programming. My goal is to
+        not only become a better developer but also to diversify my expertise.
+        Looking ahead, I'm excited about the prospects of learning React,
+        TypeScript, and Next.js. These technologies represent the next phase in
+        my career, allowing me to build more dynamic and scalable web
+        applications. Stay tuned as I continue to evolve in this ever-changing
+        field of web development.
+      </p>
+      <a href="https://www.linkedin.com/in/tarik-skender-0a4a70220/"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+          class="linkedIn-icon"
+        >
+          <path
+            d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+          ></path>
+        </svg>
+      </a>
+
       <div class="card-components">
         <div class="card card1">
-          <img src="/materials/project1.png" />
+          <h3>Rafting Agency Page</h3>
           <a href="https://unapiratesrafting.com">www.unapiratesrafting.com</a>
+          <img src="/materials/project1.png" />
         </div>
         <div class="card card2">
-          <img src="/materials/project2.png" />
+          <h3>Form Survey Page</h3>
           <a href="femflow.ba">www.femflow.ba</a>
+          <img src="/materials/project2.png" />
         </div>
         <div class="card card3">
-          <img src="/materials/ss1.PNG" />
+          <h3>High School Page</h3>
           <a href="femflow.ba">www.femflow.ba</a>
+          <img src="/materials/ss1.PNG" />
         </div>
       </div>
     </section>
+
+    <section class="contact-section">
+      <h1 style="margin: 50px">Contact me</h1>
+      <form action="#" method="post">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="4" required></textarea
+        ><br />
+        <input type="submit" value="Submit" class="submit-button" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>Made by Tarik Skender, 2024</p>
+      <a href="https://example.com/privacy-policy">Privacy Policy</a>
+      <div style="display: flex; align-items: center">
+        <img src="/materials/logocaldera.png" style="height: 100px" />
+        <div class="logo-text">
+          <h1 style="font-size: 1.5rem; margin: 0">Caldera</h1>
+          <h1 style="font-weight: 50; font-size: 1rem; margin: 0">Solutions</h1>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
