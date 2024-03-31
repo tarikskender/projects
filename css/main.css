@@ -41,10 +41,16 @@ body {
   height: 20rem;
 }
 
+.about-me2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 #projects div {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px 50px 10px 50px;
+  margin: 10px 20px 10px 20px;
 }
 
 #projects {
@@ -55,22 +61,19 @@ body {
   align-items: center;
 }
 
-.projects-paragraph {
+.projects-paragraph,
+.about-me p {
   margin: 2rem;
-  width: 30%;
-  text-align: left;
   line-height: 1.7rem;
 }
 
 .card {
-  margin: 20px;
   background-size: cover;
   padding: 2rem;
 }
 
 .card img {
-  height: 500;
-  width: 500px;
+  height: 350px;
 }
 
 #info-block {
@@ -89,6 +92,10 @@ body {
 .contact-section {
   display: block;
   text-align: center;
+}
+
+.contact-section input {
+  width: 250px;
 }
 
 .submit-button {

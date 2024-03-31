@@ -1,18 +1,19 @@
 .about-me {
   display: flex;
   padding: 20px;
-  text-align: center; // Ensures text alignment for all child elements, making individual alignment redundant
+  text-align: center;
   margin: 5rem;
-  img {
-    height: 300px;
-  }
-  .bio {
-    text-align: left;
-  }
-  h2 {
-    margin: 2rem;
-  }
 }
+.about-me img {
+  height: 300px;
+}
+.about-me .bio {
+  text-align: left;
+}
+.about-me h2 {
+  margin: 2rem;
+}
+
 @media (max-width: 500px) {
   .about-me {
     flex-direction: column;
@@ -30,4 +31,4 @@
   .about-me img {
     width: 100%;
   }
-}
+}/*# sourceMappingURL=sass.css.map */

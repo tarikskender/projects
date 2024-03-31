@@ -1,0 +1,18 @@
+.about-me {
+  align-items: center;
+  padding: 20px;
+}
+.about-me img {
+  height: 250px;
+  display: block;
+  text-align: center;
+  margin-right: 20px;
+}
+.about-me .bio h2 {
+  margin-bottom: 0.5rem;
+}
+.about-me .bio p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
