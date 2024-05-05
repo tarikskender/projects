@@ -91,5 +91,32 @@ $(document).ready(function () {
     $(".modal-body").html(details);
   });
 
-  populateTable(employees); // Initially populate table
+  populateTable(employees);
 });
+
+const themeSelect = document.getElementById("theme-select");
+
+// toggle funkcija
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
+
+themeSelect.addEventListener("change", function () {
+  if (this.value === "dark") {
+    toggleDarkMode();
+  } else {
+    toggleDarkMode();
+  }
+});
+
+// funkcija za sakrivanje i pokazivanje contenta
+
+function toggleSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section.style.display === "none") {
+    section.style.display = "block";
+  } else {
+    section.style.display = "none";
+  }
+}

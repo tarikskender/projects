@@ -1,5 +1,14 @@
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+  color: #eee;
+  background-color: #222;
 }
 
 .nav {
@@ -19,6 +28,11 @@ body {
   text-align: center;
   padding: 1rem;
   font-size: 1.2rem;
+}
+
+.nav-item-last {
+  position: relative;
+  right: 0;
 }
 
 #main-section {
