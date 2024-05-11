@@ -120,3 +120,51 @@ function toggleSection(sectionId) {
     section.style.display = "none";
   }
 }
+
+var accordion = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+
+    var block = this.nextElementSibling;
+    if (block.style.display === "block") {
+      block.style.display = "none";
+    } else {
+      block.style.display = "block";
+    }
+  });
+}
+
+document.getElementById("password").addEventListener("input", function () {
+  const strengthIndicator = document.getElementById("password-strength");
+  const password = this.value;
+  let strength = 0;
+
+  if (password.match(/[a-z]/)) {
+    strength += 1;
+  }
+  if (password.match(/[A-Z]/)) {
+    strength += 1;
+  }
+  if (password.match(/[0-9]/)) {
+    strength += 1;
+  }
+  if (password.match(/[$@#!%*?&]/)) {
+    strength += 1;
+  }
+
+  strengthIndicator.style.width = strength * 25 + "%";
+
+  if (strength === 0) {
+    strengthIndicator.className = "";
+    strengthIndicator.style.width = "0%";
+  } else if (strength === 1) {
+    strengthIndicator.className = "strength-weak";
+  } else if (strength === 2) {
+    strengthIndicator.className = "strength-medium";
+  } else if (strength >= 3) {
+    strengthIndicator.className = "strength-strong";
+  }
+});

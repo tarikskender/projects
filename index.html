@@ -150,20 +150,34 @@
     </section>
 
     <section class="contact-section">
-      <h1 style="margin: 50px">Contact me</h1>
       <form action="#" method="post">
         <label for="name">Name:</label><br />
         <input type="text" id="name" name="name" required /><br />
+
         <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required /><br />
+        <input type="email" id="email" name="email" /><br />
+
+        <label for="password">Password:</label><br />
+        <input type="password" id="password" name="password" /><br />
+
+        <center>
+          <div id="password-strength-container">
+            <div id="password-strength" style="height: 5px; width: 0%"></div>
+          </div>
+        </center>
+
+        <label for="date">Date:</label><br />
+        <input type="date" id="date" name="date" required /><br />
+
         <label for="message">Message:</label><br />
         <textarea id="message" name="message" rows="4" required></textarea
         ><br />
+
         <input type="submit" value="Submit" class="submit-button" />
       </form>
     </section>
 
-    <div class="container mt-3">
+    <!-- <div class="container mt-3">
       <input
         type="text"
         id="searchInput"
@@ -186,44 +200,21 @@
             <th scope="col">Salary</th>
           </tr>
         </thead>
-        <tbody>
-          <!-- Data rows will be dynamically inserted here -->
-        </tbody>
+        <tbody></tbody>
       </table>
-    </div>
+    </div> -->
 
     <h1 id="lifestyle">Lifestyle</h1>
 
     <p>I like to travel, have fun and stay a bit crazy.</p>
-    <div class="gallery">
-      <div>
-        <img
-          src="/materials/IMG_1240.JPG"
-          alt="Slika 1"
-          onclick="openCarousel()"
-        />
-        <div class="overlay">Opis slike 1</div>
-      </div>
-      <div>
-        <img src="/materials/IMG_1357.JPG" alt="Slika 2" />
-        <div class="overlay">Opis slike 2</div>
-      </div>
-      <div>
-        <img src="/materials/IMG_1675.JPG" alt="Slika 3" />
-        <div class="overlay">Opis slike 3</div>
-      </div>
-      <div>
-        <img src="/materials/IMG_3428.JPG" alt="Slika 1" />
-        <div class="overlay">Opis slike 1</div>
-      </div>
-      <div>
-        <img src="/materials/IMG_4717.JPG" alt="Slika 2" />
-        <div class="overlay">Opis slike 2</div>
-      </div>
-      <div>
-        <img src="/materials/IMG_9181.JPG" alt="Slika 3" />
-        <div class="overlay">Opis slike 3</div>
-      </div>
+    <center><div class="gallery"></div></center>
+
+    <div class="gallery-modal hide">
+      <span class="close" onclick="closeCarousel()">&times;</span>
+      <img class="modal-content" id="img01" />
+      <div id="caption"></div>
+      <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+      <a class="next" onclick="changeImage(1)">&#10095;</a>
     </div>
 
     <div class="gallery-modal">
@@ -231,6 +222,42 @@
       <button class="left-arrow arrow">&#x2190;</button>
       <img src="/materials/IMG_1240.JPG" />
       <button class="right-arrow arrow">&#x2192;</button>
+    </div>
+
+    <div class="accordions">
+      <button class="accordion">
+        What is my hobby & what do I do in my free time?
+      </button>
+      <div class="panel">
+        <p>
+          Currently I'm primarily focused on studying, but I manage to find some
+          time for photograpy and videography. I also like to explore Sarajevo
+          and get to know some local bars and restaurants. Generally, I'm an
+          adrenaline freak and I like adventure. Jumping off cliffs & bridges
+          always makes my day. I also love all kinds of differents sports.
+        </p>
+      </div>
+
+      <button class="accordion">Where do I live?</button>
+      <div class="panel">
+        <p>
+          My roots are in Bihać where I was born and lived most of my life.
+          Currently I am located in Sarajevo.
+        </p>
+      </div>
+
+      <button class="accordion">What is Caldera Solutions?</button>
+      <div class="panel">
+        <p>
+          Caldera Solutions is an established IT firm specializing in delivering
+          cutting-edge enterprise solutions. Our team of developers leverages
+          the power of React.js, a popular JavaScript library known for its
+          efficiency and flexibility in building interactive user interfaces.
+          This choice reflects our commitment to utilizing robust technologies
+          that enable dynamic and scalable applications, critical for client's
+          large-scale enterprise projects. Our CEO and founder is Harun Skender.
+        </p>
+      </div>
     </div>
 
     <footer class="footer">

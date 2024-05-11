@@ -112,6 +112,35 @@ body {
   width: 250px;
 }
 
+#password-strength-container {
+  width: 20%;
+  background: #ddd;
+  height: 5px;
+  margin: 2rem;
+  display: flex;
+}
+
+#password-strength {
+  height: 5px;
+  background-color: #e1e1e1;
+  width: 100%;
+}
+
+.strength-weak {
+  background-color: red !important;
+  width: 150px;
+}
+
+.strength-medium {
+  background-color: orange !important;
+  width: 200px;
+}
+
+.strength-strong {
+  background-color: green !important;
+  width: 250px;
+}
+
 .submit-button {
   padding: 10px;
   width: 100px;
@@ -124,6 +153,36 @@ body {
   background-color: #e1e1e1;
   transition: all 0.3s;
 }
+
+.accordions {
+  margin-top: 5rem;
+}
+
+.accordion {
+  background-color: #eeeeee;
+  color: #1d1d1d;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #101019;
+  color: #eee;
+}
+
+.panel {
+  padding: 2rem;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
 .footer {
   margin-top: 100px;
   background-color: #101019;
