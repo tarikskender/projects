@@ -168,3 +168,9 @@ document.getElementById("password").addEventListener("input", function () {
     strengthIndicator.className = "strength-strong";
   }
 });
+
+function openPersonalPage() {
+  window.close();
+
+  window.open("personal.html", "_self");
+}
