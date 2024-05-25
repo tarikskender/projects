@@ -90,11 +90,11 @@
   align-items: center;
 }
 
-#pageContent {
+.pageContent {
   background: #fff;
   padding: 20px;
   height: 80vh;
-  width: 80vw;
+  width: 40vw;
   border-radius: 8px;
   color: black;
 }
@@ -105,4 +105,23 @@
 
 .spa-page.active {
   display: block;
+}
+
+.close-btn {
+  position: relative;
+  left: 75%;
+  top: -35%;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+}
+
+.pages {
+  padding: 2rem;
+}
+
+.pages div p {
+  width: 70ch;
 }
