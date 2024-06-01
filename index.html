@@ -150,34 +150,48 @@
     </section>
 
     <section class="contact-section">
-      <form action="#" method="post">
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" required /><br />
+      <form id="contactForm">
+        <div class="container-two">
+          <div class="input-box">
+            <label for="firstname" class="label-form">First Name:</label>
+            <input
+              type="text"
+              id="firstname"
+              placeholder="Firstname"
+              required
+            />
 
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" /><br />
+            <label for="lastname" class="label-form">Last Name:</label>
+            <input type="text" id="lastname" placeholder="Lastname" required />
 
-        <label for="password">Password:</label><br />
-        <input type="password" id="password" name="password" /><br />
+            <label for="email" class="label-form">Email:</label>
+            <input type="email" id="email" placeholder="Email" required />
 
+            <label for="password" class="label-form">Password:</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <label for="date">Date:</label><br />
+            <input type="date" id="date" name="date" required /><br />
+
+            <input type="submit" value="Submit" class="submit-button" />
+            <p id="message">Password is<span id="strength"></span></p>
+          </div>
+        </div>
         <center>
           <div id="password-strength-container">
             <div id="password-strength" style="height: 5px; width: 0%"></div>
           </div>
         </center>
-
-        <label for="date">Date:</label><br />
-        <input type="date" id="date" name="date" required /><br />
-
-        <label for="message">Message:</label><br />
-        <textarea id="message" name="message" rows="4" required></textarea
-        ><br />
-
-        <input type="submit" value="Submit" class="submit-button" />
       </form>
+
+      <div id="toast" class="toast">Data saved successfully!</div>
     </section>
 
-    <!-- <div class="container mt-3">
+    <div class="container mt-3">
       <input
         type="text"
         id="searchInput"
@@ -202,7 +216,7 @@
         </thead>
         <tbody></tbody>
       </table>
-    </div> -->
+    </div>
 
     <h1 id="lifestyle">Lifestyle</h1>
 
@@ -296,5 +310,6 @@
 
     <script src="/js/general.js"></script>
     <script src="/js/gallery.js"></script>
+    <script src="/js/formsubm.js"></script>
   </body>
 </html>

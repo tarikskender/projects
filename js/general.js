@@ -170,7 +170,5 @@ document.getElementById("password").addEventListener("input", function () {
 });
 
 function openPersonalPage() {
-  window.close();
-
   window.open("personal.html", "_self");
 }

@@ -87,14 +87,13 @@
   background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .pageContent {
   background: #fff;
   padding: 20px;
-  height: 80vh;
-  width: 40vw;
   border-radius: 8px;
   color: black;
 }
@@ -124,4 +123,56 @@
 
 .pages div p {
   width: 70ch;
+}
+
+.content-container {
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  opacity: 0.8;
+}
+
+.message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #28a745;
+  border-radius: 5px;
+  z-index: 1001;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+footer {
+  margin: 0;
 }
